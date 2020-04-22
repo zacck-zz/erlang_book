@@ -1,6 +1,7 @@
 -module(functions).
 
--compile(export_all). %should be replaced with -export
+-export([head/1, second/1, same/2, old_enough/1, right_age/1, wrong_age/1, valid_time/1]).
+
 
 % Collecting elements using pattern matching
 head([H|_]) -> H.
